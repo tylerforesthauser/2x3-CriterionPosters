@@ -1,5 +1,5 @@
 <?php
-  require_once __DIR__ . '/inc/hQuery.php/hquery.php';
+  require_once __DIR__ . '/inc/hQuery/hquery.php';
   use duzun\hQuery;
   $doc = hQuery::fromUrl('https://www.criterion.com/shop/browse/list?sort=spine_number', ['Accept' => 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.8']);
   $rows = $doc->find(' table > tbody > tr');
